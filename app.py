@@ -44,6 +44,10 @@ def aircon():
     return render_template("AirconDesign.html")
 
 
+@app.route("/Lights")
+def Lights():
+    return render_template("Lighting-control.html")
+
 if __name__ == "__main__":
     app.run()
 

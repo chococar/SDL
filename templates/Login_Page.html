@@ -22,9 +22,9 @@
             position: absolute;
             transform: translate(-50%, -50%);
             box-sizing: border-box;
-            padding: 70px 30px;
+            padding: 70px 20px;
         }
-        .avatar{
+        img#avatar {
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -53,16 +53,25 @@
         }
         .loginbox input[type="submit"], input[type="text"]{
             border: none;
-            height: 25px;
+            height: 35px;
             outline: none;
+        }
+        .loginbox input[type="checkbox"]{
+            position: absolute;
+            width: 10%
+        }
+        label{
+            display: inline-block;
+            width: 60%;
+            padding: 1px 35px 15px 30px;
         }
         .loginbox input[type="submit"]{
             border: none;
             outline: none;
-            height: 40px;
+            height: 50px;
             background: #fb2525;
             color: #fff;
-            font-size: 18px;
+            font-size: 20px;
             border-radius: 20px;
             width: 100%;
         }
@@ -87,13 +96,15 @@
 </head>
 <body>
 <div class="loginbox">
-<img src="Username.jpg" class="avatar">
+<img id="avatar" src="{{url_for('static', filename='Username.jpg')}}">
     <h1>Login Here</h1>
     <form>
         <p>Username</p>
         <input type="text" name="" placeholder="Username">
         <p>Password</p>
-        <input type="text" name="" placeholder="Password">
+        <input type="text" name="" placeholder="Password" required>
+        <input id="check" type="checkbox" value="remember">
+        <label for="check">Remember password </label>
         <input type="submit" name="" value="Log In">
         <div class="new">
             <p>New to this?</p><a href="#">Sign up here</a>

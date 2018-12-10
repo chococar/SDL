@@ -1,21 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login Page</title>
-  <style>
-      body{
-          margin: 0;
-          padding: 0;
-          background: url('https://wallpapercave.com/wp/wp2596947.jpg');
-          background-size:cover;
-          font-family: sans-serif;
-      }
-  </style>
-  </head>
-  <body>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: url('https://wallpapercave.com/wp/wp2596947.jpg');
+            background-size:cover;
+            font-family: sans-serif;
+        }
+        .loginbox{
+            width: 380px;
+            height: 450px;
+            background: #8000ff;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 70px 30px;
+        }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: calc(50% - 50px);
+        }
+        .new{
+            text-align: center;
+        }
+        h1{
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .loginbox p{
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
 
-
-  </body>
+        }
+        .loginbox input{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .loginbox input[type="submit"], input[type="text"]{
+            border: none;
+            height: 25px;
+            outline: none;
+        }
+        .loginbox input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+            width: 100%;
+        }
+        .loginbox input[type="submit"]:hover{
+            cursor: pointer;
+            background: #ffc107;
+            color: #000;
+        }
+        .loginbox a{
+            text-decoration: none;
+            text-align: right;
+            font-size: 15px;
+            line-height: 30px;
+            color: #24E0FF;
+            margin: 1px;
+        }
+        .loginbox a:hover{
+            color: #ffc107;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="loginbox">
+<img src="Username.jpg" class="avatar">
+    <h1>Login Here</h1>
+    <form>
+        <p>Username</p>
+        <input type="text" name="" placeholder="Username">
+        <p>Password</p>
+        <input type="text" name="" placeholder="Password">
+        <input type="submit" name="" value="Log In">
+        <div class="new">
+            <p>New to this?</p><a href="#">Sign up here</a>
+        </div>
+    </form>
+</div>
+</body>
 </html>

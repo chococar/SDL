@@ -1,20 +1,14 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-
 @app.route("/")
-def loginpage():
-    return render_template("Login_Page.html")
-
-
-@app.route("/Register Page")
-def registerpage():
-    return render_template("Register.html")
-
-
-@app.route("/Main Page")
 def mainpage():
     return render_template("Main Page.html")
+
+
+@app.route("/Login_page")
+def loginpage():
+    return render_template("Login_Page.html")
 
 
 @app.route("/Reminder Page")
@@ -49,9 +43,8 @@ def cctv4():
 def aircon():
     return render_template("AirconDesign.html")
 
-
-@app.route("/Lights")
-def Lights():
+@app.route("/Lighting")
+def lighting():
     return render_template("Lighting-control.html")
 
 if __name__ == "__main__":

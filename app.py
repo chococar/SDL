@@ -11,6 +11,7 @@ def loginpage():
 def registerpage():
     return render_template("Register.html")
 
+
 @app.route("/Main Page")
 def mainpage():
     return render_template("Main Page.html")

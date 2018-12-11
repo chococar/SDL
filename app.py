@@ -52,6 +52,20 @@ def aircon():
 def lighting():
     return render_template("Lighting-control.html")
 
+@app.route('/')
+def index():
+    return render_template('tracker.html')
+
+@app.route('/items')
+def items():
+    return render_template('items.html')
+
+@app.route('/history')
+def history():
+    return render_template('history.html')
+
+
+
 if __name__ == "__main__":
     app.run()
 

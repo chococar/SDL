@@ -7,7 +7,7 @@ def loginpage():
     return render_template("Login_Page.html")
 
 
-@app.route("/Register Page")
+@app.route("/Register")
 def registerpage():
     return render_template("Register.html")
 

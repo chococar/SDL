@@ -7,7 +7,7 @@ def loginpage():
     return render_template("Login_Page.html")
 
 
-@app.route("/Register")
+@app.route("/Register Page")
 def registerpage():
     return render_template("Register.html")
 
@@ -49,9 +49,8 @@ def cctv4():
 def aircon():
     return render_template("AirconDesign.html")
 
-
-@app.route("/Lights")
-def Lights():
+@app.route("/Lighting")
+def lighting():
     return render_template("Lighting-control.html")
 
 if __name__ == "__main__":

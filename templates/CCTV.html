@@ -16,14 +16,23 @@
     }
     div.Camera {
         text-align: center;
+        text-size: 15px;
         color: aliceblue;
         border: 5px solid aliceblue;
-        border-radius: 35px;
+        border-radius: 45px;
     }
-    div.Mainpage {
-        color: aliceblue;
+    button2 {
+        margin: 25px;
         padding: 15px;
+        background-color: black;
+        font-size: 30px;
+        color: aliceblue;
+        opacity: 0.6;
     }
+    button2:hover {
+        opacity: 1.0;
+    }
+
 </style>
 <h1> CCTV </h1>
 
@@ -33,6 +42,7 @@
     <a href=""><button type="submit"> View CCTV </button></a>
 
 </div>
+<br/>
 <div class = "Camera">
     <h2> CCTV 2 </h2>
     <a href="/CCTV_2"><button type="submit"> Settings </button></a>
@@ -40,6 +50,7 @@
 
 
 </div>
+<br/>
 <div class = "Camera">
     <h2> CCTV 3 </h2>
     <a href="/CCTV_3"><button type="submit"> Settings </button></a>
@@ -47,15 +58,16 @@
 
 
 </div>
+<br/>
 <div class = "Camera">
     <h2> CCTV 4 </h2>
     <a href="/CCTV_4"><button type="sumbit"> Settings </button></a>
     <a href=""><button type="submit"> View CCTV </button></a>
 
 </div>
+<br/>
 <div class =  "Mainpage">
-    <h2> Return to Mainpage</h2>
-    <a href="/"><button type="submit"> Return </button></a>
+    <a href="/"><button2 type="submit"> <= Return to Mainpage </button2></a>
 </div>
 </body>
 </html>

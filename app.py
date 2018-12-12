@@ -102,7 +102,9 @@ def history():
     return render_template('history.html', history=Hist)
 
 
-
+@app.route('/map')
+def map():
+    return render_template('map.html')
 
 
 

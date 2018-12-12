@@ -40,6 +40,8 @@ def register():
     return render_template("Register.html", form=form)
 
 
+
+
 @app.route("/remind")
 def reminder():
     return render_template("Reminder page.html")

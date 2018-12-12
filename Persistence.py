@@ -1,4 +1,7 @@
 import shelve as s
+import sqlite3
+
+db = sqlite3.connect('user.db')
 
 class User:
     def __init__(self, name, password):

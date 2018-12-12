@@ -32,9 +32,10 @@ margin: 2% 45%;
     	var item = prompt("Enter a new item:");
     	while(!item){
             var item=prompt('Please Enter a item');
-            };
+
+            }
 	    var list=document.getElementById("hobby");
-    	var create = document.createElement("button", "option");
+    	var create = document.createElement("button");
     	create.innerText = item;
         create.className = "btn btn-outline-primary btn-lg new_button ";
     	list.appendChild(create);
@@ -59,7 +60,7 @@ margin: 2% 45%;
   <button id="c" onclick="addItem()" class="btn btn-outline-primary btn-lg" >Add Item +</button>
 
 
-<button onclick="remove()">Remove</button>
+<button class="btn btn-primary" onclick="remove()">Remove</button>
 
 </body>
 </html>

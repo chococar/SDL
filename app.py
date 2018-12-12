@@ -1,6 +1,11 @@
 from flask import Flask, render_template
 from Persistence import *
+from his import Hist
+
 app = Flask(__name__)
+
+Hist = Hist()
+
 
 @app.route("/")
 def main():
@@ -94,7 +99,12 @@ def items():
 
 @app.route('/history')
 def history():
-    return render_template('history.html')
+    return render_template('history.html', history=Hist)
+
+
+
+
+
 
 
 @app.route('/logout')

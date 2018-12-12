@@ -17,7 +17,7 @@ Air-con Control Panel
 <p id="temperatureControls" href="{{ url_for('update', value=value) }}">
 <img id="temperatureArrow" src="{{url_for('static',filename='arrowup.png')}}"/>
 <br>
-Temperature
+{{ value }}°C
 <br>
 <img id="temperatureArrow" src="{{url_for('static',filename='arrowup.png')}}" style="transform: rotate(180deg)">
 </p>>

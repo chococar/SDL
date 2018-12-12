@@ -2,7 +2,7 @@
 
 {% block body %}
 
-  V<!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,25 +10,48 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 </head>
-<body>
- <div class="dropdown">
-  <button class="btn btn-outline-success dropdown-toggle btn-lg btn-block" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Add Item+
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <textarea></textarea>
-
-  </div>
-</div>
 
 
 <style>
-.dropdown{
-    margin:10% 25%;
-    width: 50%;
+
+
+.new_button{
+	display:block;
+
 }
+
+button{
+margin: 2% 100px;
+}
+
 </style>
 
+<script>
 
+    function addItem() {
+    	var item = prompt("Enter a new item:");
+    	while(!item){
+            var item=prompt('Please Enter a item');
+            };
+	    var list=document.getElementById("hobby");
+    	var create = document.createElement("button");
+    	create.innerText = item;
+        create.className = "btn btn-outline-primary btn-lg new_button";
+    	list.appendChild(create);
+
+	}
+
+  </script>
+
+
+<body>
+
+
+  <div id="hobby">
+
+  </div>
+  <button id="c" onclick="addItem()" class="btn btn-outline-primary btn-lg" >Add Item +</button>
+</body>
+</html>
 
 {%  endblock %}

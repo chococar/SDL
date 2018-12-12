@@ -14,13 +14,13 @@ Air Conditioning
 Air-con Control Panel
 </p>
 
-<p id="temperatureControls">
+<p id="temperatureControls" href="{{ url_for('update', value=value) }}">
 <img id="temperatureArrow" src="{{url_for('static',filename='arrowup.png')}}"/>
 <br>
 Temperature
 <br>
 <img id="temperatureArrow" src="{{url_for('static',filename='arrowup.png')}}" style="transform: rotate(180deg)">
-</p>
+</p>>
 
 <p id="powerControls">
 <img id="powerButtonOn" src="{{url_for('static',filename='powerbutton.png')}}">
@@ -40,5 +40,10 @@ ON
 <p id="powerOFF">
 OFF
 </p>
+
+<p id="currentTemperature">
+Current Temperature:
+</p>
+
 </body>
 </html>

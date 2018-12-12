@@ -75,11 +75,11 @@
 <div class="registerbox">
 <img id="avatar" src="{{url_for('static', filename='Username.jpg')}}">
     <h1>Register</h1>
-    <form>
+    <form method="post">
         <p>Username</p>
-        <input type="text" name="" placeholder="Username">
+        <input type="text" id="username" placeholder="Username" required>
         <p>Password</p>
-        <input type="text" name="" placeholder="Password">
+        <input type="text" id="password" placeholder="Password" required>
         <p>Re-enter Password</p>
         <input type="text" name="" placeholder="Re-enter Password">
         <input type="submit" name="" value="Sign Up">

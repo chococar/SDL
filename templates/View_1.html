@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html>
 <head>
     <title> CCTV 1 </title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
 </head>
 <body>
-    <style>
-        body {
+<style>
+    body {
         background-image: url("https://cdn.discordapp.com/attachments/506669690584694805/519339572988084234/spacebackground.jpg");
     }
-        #container {
+    #container {
     margin: auto;
     width: 500px;
     height: 375px;
     border: 10px #333 solid;
     }
-        #videoElement {
+    #videoElement {
     width: 500px;
     height: 375px;
     background-color: #666;
     }
-        button {
+    button {
         padding: 15px;
         background-color: black;
         font-size: 20px;
@@ -30,8 +29,9 @@
     button:hover {
         opacity: 1.0;
     }
-    </style>
+</style>
 <div id="container">
+    <h2> CCTV 1 Viewing </h2>
     <video autoplay="true" id="videoElement">
 
     </video>

@@ -75,9 +75,24 @@ def cctv4():
     return render_template("CCTV_4.html")
 
 
-@app.route("/View_1")
+@app.route("/View1")
 def view1():
     return render_template("View_1.html")
+
+
+@app.route("/View2")
+def view1():
+    return render_template("View_2.html")
+
+
+@app.route("/View3")
+def view1():
+    return render_template("View_3.html")
+
+
+@app.route("/View4")
+def view1():
+    return render_template("View_4.html")
 
 
 @app.route("/Aircon", methods=("GET", "POST"))

@@ -45,8 +45,6 @@ def register():
     return render_template("Register.html", form=form)
 
 
-
-
 @app.route("/remind")
 def reminder():
     return render_template("Reminder page.html")
@@ -77,14 +75,21 @@ def cctv4():
     return render_template("CCTV_4.html")
 
 
+@app.route("/View_1")
+def view1():
+    return render_template("View_1.html")
+
+
 @app.route("/Aircon", methods=("GET", "POST"))
 def aircon():
     return render_template("AirconDesign.html", value=24)
+
 
 @app.route("/Aircon/update/<int:value>")
 def update(value):
     value = value + 1
     return render_template('AirconDesign.html', value=value)
+
 
 @app.route("/Lighting")
 def lighting():
@@ -111,12 +116,11 @@ def map():
     return render_template('map.html')
 
 
-
-
 @app.route('/logout')
 def logout():
     session.clear()
     return login()
+
 
 if __name__ == "__main__":
     app.run()

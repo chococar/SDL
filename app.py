@@ -81,17 +81,17 @@ def view1():
 
 
 @app.route("/View2")
-def view1():
+def view2():
     return render_template("View_2.html")
 
 
 @app.route("/View3")
-def view1():
+def view3():
     return render_template("View_3.html")
 
 
 @app.route("/View4")
-def view1():
+def view4():
     return render_template("View_4.html")
 
 
